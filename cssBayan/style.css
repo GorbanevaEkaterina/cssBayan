@@ -28,10 +28,11 @@
     margin: 0 0 10px;
 }
 
-.wrapperAccordion label {
+label {
     text-align: center;
     cursor: pointer;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border-bottom: #e3590a 2px;
+    background: rgba(34, 193, 195, 1);
     display: block;
     padding: 15px 20px;
     width: 100%;
@@ -43,6 +44,10 @@
     font-size: 18px;
     margin: 0 0 5px;
     transition: color .35s;
+}
+
+.wrapperAccordion {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .wrapperAccordion label:hover {
@@ -59,8 +64,8 @@
 }
 
 .wrapperAccordion input:checked+label {
-    background-color: #285f8f;
-    color: #FFF;
+    background-color: rgba(253, 187, 45, 1);
+    color: black;
     box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
 }
 
