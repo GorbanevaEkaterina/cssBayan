@@ -1,0 +1,77 @@
+.wrapperAccordion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapperAccordion .memBody {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wrapperAccordion .memBody img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px;
+}
+
+.wrapperAccordion label {
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: black;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+
+.wrapperAccordion label:hover {
+    color: #FFF;
+}
+
+.wrapperAccordion input {
+    display: none;
+}
+
+.wrapperAccordion label:before {
+    content: '\271A';
+    float: right;
+}
+
+.wrapperAccordion input:checked+label {
+    background-color: #285f8f;
+    color: #FFF;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+
+.wrapperAccordion input:checked+label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+
+.wrapperAccordion input:checked+label+.memBody {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
