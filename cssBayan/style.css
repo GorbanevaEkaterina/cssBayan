@@ -55,7 +55,7 @@
 }
 
 label {
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     border-bottom: #e3590a 2px;
     background: rgba(34, 193, 195, 1);
