@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
 .wrapperAccordion {
     flex-direction: column;
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
@@ -29,9 +33,11 @@
     .wrapperAccordion .memBody {
         width: 100%;
     }
+
 }
 
 .wrapperAccordion .memBody img {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +60,7 @@
 
 }
 
+
 label {
     text-align: left;
     cursor: pointer;
@@ -69,7 +76,7 @@ label {
     font-family: Verdana, sans-serif;
     font-size: 30px;
     margin: 0 0 5px;
-    transition: color .75s;
+    transition: .75s;
 }
 
 @media (max-width: 820px) {
@@ -100,11 +107,14 @@ label {
 .memBodyImg {
     width: 50vw;
     height: 100vh;
+    transition: 0.6s;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
+
 
 .wrapperAccordion {
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    height: 100vw;
+    height: 70vw;
 }
 
 .wrapperAccordion label:hover {
@@ -127,20 +137,21 @@ label {
 }
 
 .wrapperAccordion input:checked+label:before {
-    transition: transform .5s;
-    transform: rotate(45deg);
+    transition: .5s;
+    transform: rotate(90deg);
 }
 
 .wrapperAccordion input:checked+label+.memBody {
     height: 100vh;
     margin-top: -5px;
     color: #000;
-
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .wrapperAccordion input:hover+label+.memBody {
     height: 100vh;
     margin-top: -5px;
     color: #000;
-
+    transition: .6s;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
